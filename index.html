@@ -1,0 +1,249 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dori Craft By Divya</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+
+<div class="top-bar">
+    🎉 Handmade Cotton Rope & Jute Creations | Delivery Available in Bhiwadi
+</div>
+
+<!-- HEADER -->
+
+<header>
+    <div class="logo">
+        <h1>Dori Craft</h1>
+        <span>By Divya</span>
+    </div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="cart-icon" onclick="toggleCart()">
+        🛒 <span id="cartCount">0</span>
+    </div>
+</header>
+
+<!-- HERO SECTION -->
+
+<section id="home" class="hero">
+
+    <div class="hero-content">
+
+        <h1>Dori Craft By Divya</h1>
+
+        <p>
+            Handcrafted cotton rope & jute creations designed to bring beauty,
+            organization and warmth into your home.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#products" class="btn">Shop Now</a>
+
+            <a href="https://wa.me/917737371029" class="btn btn-outline">
+                Contact Us
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- WHY CHOOSE US -->
+
+<section class="why-us">
+
+    <h2>Why Choose Dori Craft?</h2>
+
+    <div class="features">
+
+        <div class="feature">
+            🌱
+            <h3>Eco-Friendly</h3>
+            <p>Made using cotton rope and jute materials.</p>
+        </div>
+
+        <div class="feature">
+            🧵
+            <h3>Handmade</h3>
+            <p>Crafted with care and attention to detail.</p>
+        </div>
+
+        <div class="feature">
+            🚚
+            <h3>Local Delivery</h3>
+            <p>Fast delivery across Bhiwadi.</p>
+        </div>
+
+        <div class="feature">
+            💬
+            <h3>WhatsApp Ordering</h3>
+            <p>Simple and direct ordering process.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- PRODUCTS -->
+
+<section id="products" class="products">
+
+    <h2>Featured Products</h2>
+
+    <div id="productContainer" class="product-grid"></div>
+
+</section>
+
+<!-- COMING SOON -->
+
+<section class="coming-soon">
+
+    <h2>Coming Soon</h2>
+
+    <div class="coming-grid">
+
+        <div class="coming-card">🎩 Handmade Hats</div>
+        <div class="coming-card">🏡 Table Mats</div>
+        <div class="coming-card">🖼 Wall Décors</div>
+        <div class="coming-card">🧸 Toy Baskets</div>
+        <div class="coming-card">🐻 Animal-Shaped Baskets</div>
+
+    </div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about" class="about">
+
+    <h2>About Dori Craft</h2>
+
+    <p>
+        Dori Craft By Divya creates handmade cotton rope and jute products
+        designed to add beauty and functionality to everyday spaces.
+
+        From decorative planters to stylish bags, every item is crafted with
+        care using eco-friendly materials and attention to detail.
+
+        Products are available in limited quantities and may be made-to-order.
+        Typical delivery time is 2–3 days within Bhiwadi.
+    </p>
+
+</section>
+
+<!-- REVIEWS -->
+
+<section id="reviews" class="reviews">
+
+    <h2>Customer Reviews</h2>
+
+    <div class="review-grid">
+
+        <div class="review-card">
+            ⭐⭐⭐⭐⭐
+            <h3>Neha</h3>
+            <p>Beautiful quality and finishing.</p>
+        </div>
+
+        <div class="review-card">
+            ⭐⭐⭐⭐⭐
+            <h3>Pooja</h3>
+            <p>Loved the planter set. Looks amazing in my balcony.</p>
+        </div>
+
+        <div class="review-card">
+            ⭐⭐⭐⭐⭐
+            <h3>Ritu</h3>
+            <p>Very unique handmade products.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact" class="contact">
+
+    <h2>Contact Us</h2>
+
+    <p>📍 Bhiwadi, Rajasthan - 301019</p>
+
+    <p>📞 77373 71029</p>
+
+    <div class="contact-buttons">
+
+        <a href="https://wa.me/917737371029" class="btn">
+            WhatsApp
+        </a>
+
+        <a href="tel:7737371029" class="btn btn-outline">
+            Call Now
+        </a>
+
+        <a href="https://www.instagram.com/dori_craft__by_divya"
+           class="btn btn-outline">
+            Instagram
+        </a>
+
+    </div>
+
+</section>
+
+<!-- CART -->
+
+<div id="cartSidebar" class="cart-sidebar">
+
+    <h2>Your Cart</h2>
+
+    <div id="cartItems"></div>
+
+    <h3>Total: ₹<span id="cartTotal">0</span></h3>
+
+    <button class="whatsapp-order-btn"
+            onclick="orderOnWhatsApp()">
+        Order on WhatsApp
+    </button>
+
+</div>
+
+<!-- FLOATING WHATSAPP -->
+
+<a href="https://wa.me/917737371029"
+   class="floating-whatsapp">
+    💬
+</a>
+
+<footer>
+
+    <p>
+        © 2025 Dori Craft By Divya |
+        Handmade With Care Since 2024
+    </p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+```

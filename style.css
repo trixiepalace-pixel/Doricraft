@@ -1,0 +1,379 @@
+css
+/* =========================
+   DORI CRAFT BY DIVYA
+   STYLE.CSS
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f8f3eb;
+    color:#333;
+}
+
+/* TOP BAR */
+
+.top-bar{
+    background:#6d8a4f;
+    color:white;
+    text-align:center;
+    padding:10px;
+    font-size:14px;
+}
+
+/* HEADER */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 8%;
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+}
+
+.logo h1{
+    color:#5a6e2f;
+    font-size:28px;
+}
+
+.logo span{
+    color:#777;
+    font-size:14px;
+}
+
+nav{
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#6d8a4f;
+}
+
+.cart-icon{
+    cursor:pointer;
+    font-size:18px;
+    font-weight:600;
+}
+
+/* HERO */
+
+.hero{
+    height:90vh;
+    background:
+    linear-gradient(rgba(0,0,0,.35),
+    rgba(0,0,0,.35)),
+    url("images/hero.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-content{
+    max-width:700px;
+    padding:20px;
+}
+
+.hero-content h1{
+    font-size:58px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:20px;
+    margin-bottom:30px;
+    line-height:1.7;
+}
+
+/* BUTTONS */
+
+.btn{
+    display:inline-block;
+    background:#6d8a4f;
+    color:white;
+    text-decoration:none;
+    padding:14px 28px;
+    border-radius:40px;
+    margin:5px;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+.btn-outline{
+    background:transparent;
+    border:2px solid white;
+    color:white;
+}
+
+/* SECTIONS */
+
+section{
+    padding:80px 8%;
+}
+
+section h2{
+    text-align:center;
+    margin-bottom:40px;
+    color:#5a6e2f;
+    font-size:36px;
+}
+
+/* WHY US */
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.feature{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.feature h3{
+    margin:15px 0;
+}
+
+/* PRODUCTS */
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.product-card{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.product-card:hover{
+    transform:translateY(-5px);
+}
+
+.product-card img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+}
+
+.product-info{
+    padding:20px;
+}
+
+.product-info h3{
+    margin-bottom:10px;
+}
+
+.price{
+    color:#5a6e2f;
+    font-size:22px;
+    font-weight:700;
+}
+
+.old-price{
+    color:#999;
+    text-decoration:line-through;
+    margin-left:8px;
+}
+
+.badge{
+    display:inline-block;
+    background:#d9534f;
+    color:white;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:12px;
+    margin-bottom:12px;
+}
+
+.add-cart{
+    width:100%;
+    margin-top:15px;
+    border:none;
+    background:#6d8a4f;
+    color:white;
+    padding:12px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+/* COMING SOON */
+
+.coming-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+}
+
+.coming-card{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    font-weight:600;
+}
+
+/* ABOUT */
+
+.about p{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    line-height:1.9;
+    font-size:18px;
+}
+
+/* REVIEWS */
+
+.review-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+
+.review-card{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+/* CONTACT */
+
+.contact{
+    text-align:center;
+}
+
+.contact p{
+    margin:10px 0;
+}
+
+.contact-buttons{
+    margin-top:25px;
+}
+
+/* CART */
+
+.cart-sidebar{
+    position:fixed;
+    top:0;
+    right:-420px;
+    width:400px;
+    max-width:90%;
+    height:100%;
+    background:white;
+    padding:25px;
+    transition:.4s;
+    overflow-y:auto;
+    box-shadow:-5px 0 20px rgba(0,0,0,.15);
+    z-index:2000;
+}
+
+.cart-sidebar.active{
+    right:0;
+}
+
+.cart-item{
+    border-bottom:1px solid #ddd;
+    padding:12px 0;
+}
+
+.whatsapp-order-btn{
+    width:100%;
+    background:#25D366;
+    color:white;
+    border:none;
+    padding:14px;
+    margin-top:20px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+/* FLOATING WHATSAPP */
+
+.floating-whatsapp{
+    position:fixed;
+    bottom:25px;
+    right:25px;
+    width:60px;
+    height:60px;
+    background:#25D366;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    font-size:28px;
+    color:white;
+    box-shadow:0 5px 20px rgba(0,0,0,.2);
+}
+
+/* FOOTER */
+
+footer{
+    background:#5a6e2f;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    nav{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero-content h1{
+        font-size:40px;
+    }
+
+    .hero-content p{
+        font-size:16px;
+    }
+
+}
+
